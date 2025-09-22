@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $rodne_cislo = $_POST['rodne_cislo'];
 
     // Overenie, že rodné číslo má správny formát
-    if (preg_match('/^\d{10}$/', $rodne_cislo)) {
+    if (preg_match('/^\d{10}$/', $rodne_cislo )) {
         $pohlavie = zistiPohlavie($rodne_cislo);
         $vek = vypocitajVek($rodne_cislo);
 
